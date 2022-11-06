@@ -1,0 +1,24 @@
+.section {
+    background: linear-gradient(rgba(0, 255, 255, 0.5), rgba(0, 0, 0, 0.5)), url("https://source.unsplash.com/random");
+    background-size: cover;
+    background-position: center;
+    min-height: 90.3vh;
+}
+
+.text {
+    padding-top: 35vh;
+}
+
+.center {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    color: wheat;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    border-radius: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
