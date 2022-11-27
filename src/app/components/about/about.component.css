@@ -1,3 +1,31 @@
 .text-center {
-    background: linear-gradient(to top, white, rgba(0, 255, 255, 0.5));
+    /* background: linear-gradient(to top, white, rgba(0, 255, 255, 0.5)); */
+    color: white;
+}
+
+.section {
+    position: relative;
+    overflow: hidden;
+}
+
+.bg {
+    position: fixed;
+    z-index: -1;
+}
+
+.section2 {
+    height: 90.3vh;
+    width: 100vw;
+    overflow: scroll;
+}
+
+.section2::-webkit-scrollbar {
+    display: none;
+}
+
+.hr1 {
+    height: 2px;
+    background-color: white;
+    width: 75vw;
+    margin: auto;
 }

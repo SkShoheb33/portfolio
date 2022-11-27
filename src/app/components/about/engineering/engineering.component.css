@@ -1,4 +1,5 @@
 .text-center {
     padding: 30px;
-    background: rgb(228, 228, 202);
+    /* background: rgb(228, 228, 202); */
+    color: white;
 }
