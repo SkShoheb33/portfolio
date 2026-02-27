@@ -1,0 +1,656 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="./style.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Home</title>
+  </head>
+
+  <body class="w-full">
+    <navbar class="px-16 py-4 flex justify-between items-center text-lg">
+      <div class="font-medium text-2xl">
+        <span class="text-theme underline">S</span>haik
+        <span class="text-theme underline">S</span>hoheb
+      </div>
+      <div class="flex gap-4 justify-between items-center font-regular">
+        <a
+          href="#experience"
+          class="hover:underline decoration-regal-blue decoration-regal-blue hover:cursor-pointer"
+        >
+          About
+        </a>
+        <a
+          href="#projects"
+          class="hover:underline decoration-regal-blue decoration-regal-blue hover:cursor-pointer"
+          >Projects</a
+        >
+        <a
+          href="#contact"
+          class="hover:underline decoration-regal-blue decoration-regal-blue hover:cursor-pointer"
+          >Contacts</a
+        >
+      </div>
+    </navbar>
+    <div class="px-16 py-2 flex flex-col gap-8 w-full">
+      <div class="flex items-center justify-between w-full mt-32">
+        <div class="w-1/2 flex flex-col gap-2">
+          <div class="text-theme text-xl">SOFTWARE DEVELOPER</div>
+          <div class="text-black text-6xl font-semibold">
+            Hello, my name is <span class="text-theme">Shoheb Shaik</span>
+          </div>
+          <div>
+            I am a Software Engineer specializing in Generative AI and
+            Microservices architecture. I focus on building end-to-end AI
+            engines, such as Arohaa, where I've solved complex challenges like
+            temporal consistency in AI video. With deep expertise in the MERN
+            stack, Python, and AWS, I thrive on bridging the gap between
+            cutting-edge AI research and scalable, high-performance production
+            environments.
+          </div>
+          <div class="flex gap-2 items-start justify-start">
+            <button
+              class="bg-theme text-white border-theme border-2 px-8 py-1 font-regular rounded flex justify-center items-center gap-1 transition delay-150 duration-100 ease-in-out hover:-translate-y-1 hover:scale-110 hover:cursor-pointer"
+            >
+              <i class="fa-brands fa-github"></i>
+              Github
+            </button>
+            <button
+              class="border-theme text-theme border-2 px-8 py-1 font-regular rounded flex justify-center items-center gap-1 transition delay-150 duration-100 ease-in-out hover:-translate-y-1 hover:scale-110 hover:cursor-pointer"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+              LinkidIn
+            </button>
+          </div>
+        </div>
+        <div class="">
+          <div
+            class="relative w-[325px] h-[325px] border-theme border-4 p-4 rounded-full rounded-tr-xs overflow-hidden"
+          >
+            <div
+              class="relative w-[320px] h-[320px] bg-theme rounded-full rounded-tr-xs overflow-hidden"
+            >
+              <img
+                src="./assets/mypic.png"
+                class="w-[300px] h-[300px] object-cover shadow-lg absolute bottom-0 right-0"
+              />
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-full flex flex-col gap-4">
+        <!-- skills -->
+        <div class="w-full flex flex-col gap-4">
+          <!-- heading skills -->
+          <div class="font-medium flex flex-row items-center w-full">
+            <div
+              class="text-theme border-theme border-4 font-bold rounded-full flex justify-center items-center py-1 w-[150px]"
+            >
+              Skilled In
+            </div>
+            <div class="h-1 bg-theme w-[calc(100%-150px)]"></div>
+            <i class="fa-solid fa-circle-dot text-theme"></i>
+          </div>
+          <!-- skills list -->
+          <div
+            class="w-full flex justify-start gap-4 flex-wrap hover:cursor-pointer"
+          >
+            <div
+              class="w-28 h-28 metallic-button flex flex-col gap-1 items-center justify-center"
+            >
+              <i class="fa-brands fa-python text-4xl"></i>
+              <div class="font-regular font-[500]">Python</div>
+            </div>
+
+            <div
+              class="w-28 h-28 metallic-button flex flex-col gap-1 items-center justify-center"
+            >
+              <i class="fa-brands fa-java text-4xl"></i>
+              <div class="font-regular font-[500]">Java</div>
+            </div>
+
+            <div
+              class="w-28 h-28 metallic-button flex flex-col gap-1 items-center justify-center"
+            >
+              <i class="fa-brands fa-js text-4xl"></i>
+              <div class="font-regular font-[500]">Javascript</div>
+            </div>
+
+            <div
+              class="w-28 h-28 metallic-button flex flex-col gap-1 items-center justify-center"
+            >
+              <i class="fa-brands fa-react text-4xl"></i>
+              <div class="font-regular font-[500]">React JS</div>
+            </div>
+
+            <div
+              class="w-28 h-28 metallic-button flex flex-col gap-1 items-center justify-center"
+            >
+              <i class="fa-brands fa-node-js text-4xl"></i>
+              <div class="font-regular font-[500]">Node JS</div>
+            </div>
+
+            <div
+              class="w-28 h-28 metallic-button flex flex-col gap-1 items-center justify-center"
+            >
+              <i class="fa-brands fa-vuejs text-4xl"></i>
+              <div class="font-regular font-[500]">Vue JS</div>
+            </div>
+
+            <div
+              class="w-28 h-28 metallic-button flex flex-col gap-1 items-center justify-center"
+            >
+              <i class="fa-solid fa-leaf text-4xl"></i>
+              <div class="font-regular font-[500]">Mongo DB</div>
+            </div>
+
+            <div
+              class="w-28 h-28 metallic-button flex flex-col gap-1 items-center justify-center"
+            >
+              <i class="fa-brands fa-tailwind-css text-4xl"></i>
+              <div class="font-regular font-[500]">Tailwind CSS</div>
+            </div>
+
+            <div
+              class="w-28 h-28 metallic-button flex flex-col gap-1 items-center justify-center"
+            >
+              <i class="fa-brands fa-typescript text-4xl"></i>
+              <div class="font-regular font-[500]">TypeScript</div>
+            </div>
+
+            <div
+              class="w-28 h-28 metallic-button flex flex-col gap-1 items-center justify-center"
+            >
+              <i class="fa-brands fa-aws text-4xl"></i>
+              <div class="font-regular font-[500]">AWS</div>
+            </div>
+
+            <div
+              class="w-28 h-28 metallic-button flex flex-col gap-1 items-center justify-center"
+            >
+              <i class="fa-brands fa-docker text-4xl"></i>
+              <div class="font-regular font-[500]">Docker</div>
+            </div>
+
+            <div
+              class="w-28 h-28 metallic-button flex flex-col gap-1 items-center justify-center"
+            >
+              <i class="fa-brands fa-github text-4xl"></i>
+              <div class="font-regular font-[500]">Github</div>
+            </div>
+
+            <div
+              class="w-28 h-28 metallic-button flex flex-col gap-1 items-center justify-center"
+            >
+              <i class="fa-brands fa-git-alt text-4xl"></i>
+              <div class="font-regular font-[500]">Git</div>
+            </div>
+
+            <div
+              class="w-28 h-28 metallic-button flex flex-col gap-1 items-center justify-center"
+            >
+              <i class="fa-brands fa-figma text-4xl"></i>
+              <div class="font-regular font-[500]">Figma</div>
+            </div>
+
+            <div
+              class="w-28 h-28 metallic-button flex flex-col gap-1 items-center justify-center"
+            >
+              <i class="fa-brands fa-unity text-4xl"></i>
+              <div class="font-regular font-[500]">Unity</div>
+            </div>
+          </div>
+        </div>
+        <!-- experience -->
+        <div id="experience" class="w-full flex flex-col gap-4">
+          <!-- heading -->
+          <div class="font-medium flex flex-row-reverse items-center w-full">
+            <div
+              class="text-theme border-theme border-4 font-bold rounded-full flex justify-center items-center py-1 w-[150px]"
+            >
+              Experience
+            </div>
+            <div class="h-1 bg-theme w-[calc(100%-150px)]"></div>
+            <i class="fa-solid fa-circle-dot text-theme"></i>
+          </div>
+          <!-- experience list -->
+          <div class="flex flex-col">
+            <div class="flex items-stretch gap-2 w-full">
+              <div class="text-theme flex flex-col items-center self-stretch">
+                <i class="fa-regular fa-circle-dot"></i>
+                <div class="bg-theme w-1 h-full"></div>
+              </div>
+              <div
+                class="flex flex-col gap-2 h-full justify-between mb-5 w-full"
+              >
+                <!-- company meta data -->
+                <div
+                  class="flex justify-between items-center w-full text-theme"
+                >
+                  <!-- company details -->
+                  <div class="">
+                    <span class="font-semibold">Software Engineer </span>
+                    <span class="underline">
+                      Vargah Software Private Limited</span
+                    >
+                    <span>
+                      <i class="fa-solid fa-location-dot"></i> Hyderabad,
+                      Telangana
+                    </span>
+                  </div>
+                  <!-- duration -->
+                  <div class="flex gap-1 justify-center items-center">
+                    <i class="fa-solid fa-calendar"></i
+                    ><span>Nov 2024 – Dec 2025</span>
+                  </div>
+                </div>
+                <!-- keypoints -->
+                <ul class="list-disc mx-4 my-2 gap-1">
+                  <li>
+                    Pioneered the development of Arohaa, a full-stack generative
+                    AI engine that solves temporal flickering in AI video by
+                    maintaining strict character and environmental consistency
+                    across generated sequences.
+                  </li>
+                  <li>
+                    Executed advanced LLM model implementations, applying
+                    various architectures to address diverse functional
+                    requirements.
+                  </li>
+                  <li>
+                    Leveraged a tech stack including Vite, React JS, Tailwind
+                    CSS, FLUX Dev Kontext, Gemini 2.5 Pro API, ComfyUI, AWS
+                    services, and FastAPI.
+                  </li>
+                  <li>
+                    Orchestrated LangChain-based LLM chains utilizing few-shot
+                    learning techniques to standardize JSON outputs, ensuring
+                    seamless data flow between Gemini 2.5 Pro and the ComfyUI
+                    backend.
+                  </li>
+                  <li>
+                    Deployed a scalable, distributed system utilizing AWS
+                    (Lambda/S3) for core web services and containerized FastAPI
+                    environments on Model.com to ensure seamless auto-scaling of
+                    AI-driven video generation workloads
+                  </li>
+                  <li>
+                    Managed and grew two health and wellness YouTube channels
+                    (TheEatingElements) as a proof-of-concept, achieving 36k
+                    total views and 388 subscribers within 20 days.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="flex items-stretch gap-2 w-full">
+              <div class="text-theme flex flex-col items-center self-stretch">
+                <i class="fa-regular fa-circle-dot"></i>
+                <div class="bg-theme w-1 h-full"></div>
+              </div>
+              <div
+                class="flex flex-col gap-2 h-full justify-between mb-5 w-full"
+              >
+                <!-- company meta data -->
+                <div
+                  class="flex justify-between items-center w-full text-theme"
+                >
+                  <!-- company details -->
+                  <div class=" ">
+                    <span class="font-semibold">Frontend Developer</span>
+                    <span class="underline"> Investme.AI</span>
+                    <span>
+                      <i class="fa-solid fa-location-dot"></i> Bangalore,
+                      Karnataka
+                    </span>
+                  </div>
+                  <!-- duration -->
+                  <div class="flex gap-1 justify-center items-center">
+                    <i class="fa-solid fa-calendar"></i
+                    ><span>May 2024 – Oct 2024</span>
+                  </div>
+                </div>
+                <!-- keypoints -->
+                <ul class="list-disc mx-4 my-2 gap-1">
+                  <li>
+                    Designed and implemented scalable frontend architectures
+                    from scratch, including a no-code platform for financial
+                    applications using ReactFlow APIs.
+                  </li>
+                  <li>
+                    Optimized applications for performance and user experience
+                    while contributing to quick iteration cycles in an Agile
+                    environment.
+                  </li>
+                  <li>
+                    Utilized React JS, TypeScript, Tailwind CSS, Node JS, Nest
+                    JS, Sentry, and AWS.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="flex items-stretch gap-2 w-full">
+              <div class="text-theme flex flex-col items-center self-stretch">
+                <i class="fa-regular fa-circle-dot"></i>
+                <div class="bg-theme w-1 h-full"></div>
+              </div>
+              <div
+                class="flex flex-col gap-2 h-full justify-between mb-5 w-full"
+              >
+                <!-- company meta data -->
+                <div
+                  class="flex justify-between items-center w-full text-theme"
+                >
+                  <!-- company details -->
+                  <div class=" ">
+                    <span class="font-semibold">Software Intern</span>
+                    <span class="underline">
+                      Vargah Software Private Limited</span
+                    >
+                    <span>
+                      <i class="fa-solid fa-location-dot"></i> Hyderabad,
+                      Telangana
+                    </span>
+                  </div>
+                  <!-- duration -->
+                  <div class="flex gap-1 justify-center items-center">
+                    <i class="fa-solid fa-calendar"></i
+                    ><span>Feb 2024 – April 2024</span>
+                  </div>
+                </div>
+                <!-- keypoints -->
+                <ul class="list-disc mx-4 my-2 gap-1">
+                  <li>
+                    Implemented advanced AI performance enhancements using
+                    transposition tables for the Simple Hex mobile game,
+                    surpassing traditional alpha-beta pruning methods.
+                  </li>
+                  <li>
+                    Developed an AI evaluation strategy to measure improvements
+                    against performance benchmarks.
+                  </li>
+                  <li>
+                    Engineered a multithreaded architecture in C# to parallelize
+                    move-search algorithms, significantly reducing computation
+                    time per turn and allowing the AI to process deeper search
+                    trees in real-time.
+                  </li>
+                  <li>
+                    Launched "Big Hex," a mobile game played by users globally,
+                    utilizing the Unity Engine.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Education -->
+        <div class="w-full flex flex-col gap-4">
+          <!-- heading -->
+          <div class="font-medium flex flex-row items-center w-full">
+            <div
+              class="text-theme border-theme border-4 font-bold rounded-full flex justify-center items-center py-1 w-[150px]"
+            >
+              Education
+            </div>
+            <div class="h-1 bg-theme w-[calc(100%-150px)]"></div>
+            <i class="fa-solid fa-circle-dot text-theme"></i>
+          </div>
+          <!-- education list -->
+          <div class="w-full flex justify-between items-strech">
+            <div
+              class="w-2/7 border shadow p-2 rounded flex flex-col justify-between"
+            >
+              <img src="./assets/rvrjc.jpeg" class="w-full h-32" />
+              <div class="text-lg font-semibold">
+                Computer Science & Engineering
+              </div>
+              <div class="">Bachelors of Technology in</div>
+              <div class="text-theme font-medium underline">
+                R.V.R. & J.C.College of Engineering
+              </div>
+              <div class="text-sm flex gap-1 items-center">
+                <i class="fa-solid fa-location-dot"></i>Guntur, Andhra Pradesh,
+                India.
+              </div>
+              <div class="text-sm">
+                <span class="text-theme">Specialization :</span>
+                <span>Honor's in Computer Science</span>
+              </div>
+              <div
+                class="text-sm font-medium text-theme text-right border-theme border px-2 py-1 rounded w-fit self-end hover:cursor-pointer"
+              >
+                CGPA : 8.67/10.0
+              </div>
+            </div>
+            <div
+              class="w-2/7 border shadow p-2 rounded flex flex-col justify-between"
+            >
+              <img src="./assets/srichaitanya.jpeg" class="w-full h-32" />
+              <div class="text-lg font-semibold">
+                Mathematics, Physics and Chemistry
+              </div>
+              <div class="">Intermediate in</div>
+              <div class="text-theme font-medium underline">
+                Sri Chaintanya Jr. College
+              </div>
+              <div class="text-sm flex gap-1 items-center">
+                <i class="fa-solid fa-location-dot"></i>Guntur, Andhra Pradesh,
+                India.
+              </div>
+              <div class="text-sm">
+                <span class="text-theme">Eamcet Rank :</span>
+                <span>6711</span>
+              </div>
+              <div
+                class="text-sm font-medium text-theme text-right border-theme border px-2 py-1 rounded w-fit self-end hover:cursor-pointer"
+              >
+                CGPA : 9.7/10.0
+              </div>
+            </div>
+            <div
+              class="w-2/7 border shadow p-2 rounded flex flex-col justify-between"
+            >
+              <img src="./assets/school.jpg" class="w-full h-32" />
+              <div class="text-lg font-semibold">Secondary Education in</div>
+              <div class="text-theme font-medium underline">
+                St. Patrick's High School
+              </div>
+              <div class="text-sm flex gap-1 items-center">
+                <i class="fa-solid fa-location-dot"></i>Guntur, Andhra Pradesh,
+                India.
+              </div>
+              <div
+                class="text-sm font-medium text-theme text-right border-theme border px-2 py-1 rounded w-fit self-end hover:cursor-pointer"
+              >
+                CGPA : 10.0/10.0
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Projects -->
+        <div id="projects" class="w-full flex flex-col gap-4">
+          <!-- heading -->
+          <div class="font-medium flex flex-row-reverse items-center w-full">
+            <div
+              class="text-theme border-theme border-4 font-bold rounded-full flex justify-center items-center py-1 w-[150px]"
+            >
+              Projects
+            </div>
+            <div class="h-1 bg-theme w-[calc(100%-150px)]"></div>
+            <i class="fa-solid fa-circle-dot text-theme"></i>
+          </div>
+          <!-- projects list -->
+          <div class="flex flex-col gap-2">
+            <div
+              class="border border-gray/50 shadow rounded px-2 py-1 flex flex-col gap-2"
+            >
+              <div class="font-medium text-theme text-xl">
+                Healthkard | <span>Fullstack Developer</span>
+              </div>
+              <!-- keypoints -->
+              <ul class="list-disc mx-4">
+                <li>
+                  Developed a comprehensive healthcare web and hybrid mobile
+                  application to facilitate the management of medical records
+                  and appointments.
+                </li>
+                <li>
+                  Utilized React JS, Tailwind CSS, Node.js, and MongoDB to
+                  create an intuitive user interface and robust functionality.
+                </li>
+                <li>
+                  Designed a Role-Based Access Control (RBAC) system to deliver
+                  distinct, secure dashboards for Admin, Healthcare Agents, and
+                  Patients, ensuring strict data privacy and streamlined
+                  workflows.
+                </li>
+                <li>
+                  Implemented Google OAuth 2.0 for secure user authentication
+                  and orchestrated a full-stack deployment on AWS, utilizing S3
+                  for frontend hosting and AWS Lambda for a scalable, serverless
+                  Node.js backend.
+                </li>
+                <li>
+                  Engineered a hierarchical user management system where Admins
+                  manage Agent onboarding, enabling Agents to drive user
+                  enrollment through tiered health plans and track conversion
+                  metrics via a custom date-filtered analytics dashboard.
+                </li>
+                <li>
+                  Integrated PhonePe payment infrastructure, enabling secure UPI
+                  transactions and real-time payment status.
+                </li>
+              </ul>
+              <div>
+                <div class="text-xl font-medium text-theme">Project Assets</div>
+                <div class="flex items-center gap-2">
+                  <iframe
+                    style="border: 1px solid rgba(0, 0, 0, 0.1)"
+                    width="400"
+                    height="225"
+                    src="https://embed.figma.com/design/l1t5jJN5ZvXDJ7lITV8h7J/Healthkard-home-page?node-id=274-212&embed-host=share"
+                    allowfullscreen
+                  ></iframe>
+                  <iframe
+                    style="border: 1px solid rgba(0, 0, 0, 0.1)"
+                    width="400"
+                    height="225"
+                    src="https://embed.figma.com/design/l1t5jJN5ZvXDJ7lITV8h7J/Healthkard-home-page?node-id=0-1&embed-host=share"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+            <div
+              class="border border-gray/50 shadow rounded px-2 py-1 flex flex-col gap-2"
+            >
+              <div class="font-medium text-theme text-xl">
+                RJENest | <span>College ITBI Web Application</span>
+              </div>
+              <!-- keypoints -->
+              <ul class="list-disc mx-4">
+                <li>
+                  Built a responsive web application using HTML, Tailwind CSS,
+                  JavaScript to allow users to promote innovation ideas
+                </li>
+                <li>
+                  Facilitated financial and mental support for innovators via
+                  college management and government initiatives.
+                </li>
+              </ul>
+              <div>
+                <div class="text-xl font-medium text-theme">Project Assets</div>
+                <div class="flex flex-col gap-2">
+                  <div class="flex items-center gap-2">
+                    <div class="text-theme font-medium">Website Link :</div>
+                    <a
+                      href="https://rvrjcce.ac.in/rjenest/"
+                      target="_blank"
+                      class="underline"
+                      >https://rvrjcce.ac.in/rjenest/</a
+                    >
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <div class="text-theme font-medium">Source Code :</div>
+                    <a
+                      href="https://github.com/SkShoheb33/RjeNest"
+                      target="_blank"
+                      class="underline"
+                      >https://github.com/SkShoheb33/RjeNest</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- quote -->
+        <figure class="max-w-screen-md mx-auto text-center text-theme">
+          <svg
+            class="w-11 h-11 text-heading mb-4 mx-auto"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M10 11V8a1 1 0 0 0-1-1H6a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1Zm0 0v2a4 4 0 0 1-4 4H5m14-6V8a1 1 0 0 0-1-1h-3a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1Zm0 0v2a4 4 0 0 1-4 4h-1"
+            />
+          </svg>
+          <blockquote>
+            <p
+              class="text-2xl italic font-semibold tracking-tight text-heading"
+            >
+              "I believe in hard work. I compete with myself from yesterday for
+              a better tomorrow."
+            </p>
+          </blockquote>
+        </figure>
+      </div>
+    </div>
+    <footer
+      id="contact"
+      class="bg-theme text-white px-16 py-4 flex justify-between"
+    >
+      <div class="w-1/3 text-center font-medium">
+        If you have an idea you’d like to implement, please don’t hesitate to
+        contact me.
+      </div>
+      <div class="w-1/3 text-center font-medium flex justify-between">
+        <div class="flex flex-col justify-center items-center">
+          <i class="fa-brands fa-linkedin text-3xl"></i>
+          <div class="text-xs">LinkedIn</div>
+        </div>
+        <div class="flex flex-col justify-center items-center">
+          <i class="fa-brands fa-x-twitter text-3xl"></i>
+          <div class="text-xs">X(formerly Twitter)</div>
+        </div>
+        <div class="flex flex-col justify-center items-center">
+          <i class="fa-brands fa-github text-3xl"></i>
+          <div class="text-xs">Github</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
