@@ -21,13 +21,15 @@
     <title>Home</title>
   </head>
 
-  <body class="w-full">
-    <navbar class="px-16 py-4 flex justify-between items-center text-lg">
-      <div class="font-medium text-2xl">
+  <body class="w-full text-xs lg:text-lg">
+    <navbar class="px-4 lg:px-16 py-4 flex justify-between items-center w-full">
+      <div class="font-medium text-lg lg:text-2xl">
         <span class="text-theme underline">S</span>haik
         <span class="text-theme underline">S</span>hoheb
       </div>
-      <div class="flex gap-4 justify-between items-center font-regular">
+      <div
+        class="flex gap-2 lg:gap-4 justify-between items-center font-regular text-sm lg:text-lg"
+      >
         <a
           href="#experience"
           class="hover:underline decoration-regal-blue decoration-regal-blue hover:cursor-pointer"
@@ -46,14 +48,16 @@
         >
       </div>
     </navbar>
-    <div class="px-16 py-2 flex flex-col gap-8 w-full">
-      <div class="flex items-center justify-between w-full mt-32">
-        <div class="w-1/2 flex flex-col gap-2">
-          <div class="text-theme text-xl">SOFTWARE DEVELOPER</div>
-          <div class="text-black text-6xl font-semibold">
+    <div class="px-4 lg:px-16 py-2 flex flex-col gap-2 lg:gap-8 w-full">
+      <div
+        class="flex flex-col-reverse lg:flex-row items-center justify-between w-full mt-8 lg:mt-32"
+      >
+        <div class="w-full lg:w-1/2 gap-2 lg:gap-0 flex flex-col gap-2">
+          <div class="text-theme text-lg lg:text-xl">SOFTWARE DEVELOPER</div>
+          <div class="text-black text-2xl lg:text-6xl font-semibold">
             Hello, my name is <span class="text-theme">Shoheb Shaik</span>
           </div>
-          <div>
+          <div class="text-xs lg:text-lg">
             I am a Software Engineer specializing in Generative AI and
             Microservices architecture. I focus on building end-to-end AI
             engines, such as Arohaa, where I've solved complex challenges like
@@ -63,30 +67,33 @@
             environments.
           </div>
           <div class="flex gap-2 items-start justify-start">
-            <button
-              class="bg-theme text-white border-theme border-2 px-8 py-1 font-regular rounded flex justify-center items-center gap-1 transition delay-150 duration-100 ease-in-out hover:-translate-y-1 hover:scale-110 hover:cursor-pointer"
+            <a
+              href="./assets/CV.pdf"
+              target="_blank"
+              class="bg-theme text-white border-theme border-2 text-sm lg:text-lg px-4 lg:px-8 py-1 font-regular rounded flex justify-center items-center gap-1 transition delay-150 duration-100 ease-in-out hover:-translate-y-1 hover:scale-110 hover:cursor-pointer"
             >
-              <i class="fa-brands fa-github"></i>
-              Github
-            </button>
-            <button
-              class="border-theme text-theme border-2 px-8 py-1 font-regular rounded flex justify-center items-center gap-1 transition delay-150 duration-100 ease-in-out hover:-translate-y-1 hover:scale-110 hover:cursor-pointer"
+              <i class="fa-solid fa-download"></i>
+              Resume
+            </a>
+            <a
+              href="https://www.linkedin.com/in/shaikshoheb33/"
+              target="_blank"
+              class="border-theme text-theme border-2 text-sm lg:text-lg px-4 lg:px-8 py-1 font-regular rounded flex justify-center items-center gap-1 transition delay-150 duration-100 ease-in-out hover:-translate-y-1 hover:scale-110 hover:cursor-pointer"
             >
-              <i class="fa-brands fa-linkedin"></i>
-              LinkidIn
-            </button>
+              <i class="fa-brands fa-linkedin"></i> LinkidIn
+            </a>
           </div>
         </div>
-        <div class="">
+        <div class="lg:block">
           <div
-            class="relative w-[325px] h-[325px] border-theme border-4 p-4 rounded-full rounded-tr-xs overflow-hidden"
+            class="relative w-[225px] h-[225px] lg:w-[325px] lg:h-[325px] border-theme border-4 p-4 rounded-full rounded-tr-xs overflow-hidden"
           >
             <div
-              class="relative w-[320px] h-[320px] bg-theme rounded-full rounded-tr-xs overflow-hidden"
+              class="relative w-[220px] h-[220px] lg:w-[320px] lg:h-[320px] bg-theme rounded-full rounded-tr-xs overflow-hidden"
             >
               <img
                 src="./assets/mypic.png"
-                class="w-[300px] h-[300px] object-cover shadow-lg absolute bottom-0 right-0"
+                class="w-[200px] h-[200px] lg:w-[300px] lg:h-[300px] object-cover shadow-lg absolute bottom-0 right-0"
               />
               >
             </div>
@@ -99,120 +106,146 @@
           <!-- heading skills -->
           <div class="font-medium flex flex-row items-center w-full">
             <div
-              class="text-theme border-theme border-4 font-bold rounded-full flex justify-center items-center py-1 w-[150px]"
+              class="text-xs lg:text-lg text-theme border-theme border-4 font-bold rounded-full flex justify-center items-center py-1 w-[100px] lg: w-[150px]"
             >
               Skilled In
             </div>
-            <div class="h-1 bg-theme w-[calc(100%-150px)]"></div>
+            <div
+              class="h-1 bg-theme w-[calc(100%-100px)] lg:w-[calc(100%-150px)]"
+            ></div>
             <i class="fa-solid fa-circle-dot text-theme"></i>
           </div>
           <!-- skills list -->
           <div
-            class="w-full flex justify-start gap-4 flex-wrap hover:cursor-pointer"
+            class="w-full grid grid-cols-4 lg:grid-cols-8 gap-2 lg:gap-8 hover:cursor-pointer"
           >
             <div
-              class="w-28 h-28 metallic-button flex flex-col gap-1 items-center justify-center"
+              class="w-18 lg:w-28 h-18 lg:h-28 metallic-button flex flex-col gap-1 items-center justify-center"
             >
-              <i class="fa-brands fa-python text-4xl"></i>
-              <div class="font-regular font-[500]">Python</div>
+              <i class="fa-brands fa-python text-2xl lg:text-4xl"></i>
+              <div class="font-regular font-[500] text-xs lg:text-md">
+                Python
+              </div>
             </div>
 
             <div
-              class="w-28 h-28 metallic-button flex flex-col gap-1 items-center justify-center"
+              class="w-18 lg:w-28 h-18 lg:h-28 metallic-button flex flex-col gap-1 items-center justify-center"
             >
-              <i class="fa-brands fa-java text-4xl"></i>
-              <div class="font-regular font-[500]">Java</div>
+              <i class="fa-brands fa-java text-2xl lg:text-4xl"></i>
+              <div class="font-regular font-[500] text-xs lg:text-md">Java</div>
             </div>
 
             <div
-              class="w-28 h-28 metallic-button flex flex-col gap-1 items-center justify-center"
+              class="w-18 lg:w-28 h-18 lg:h-28 metallic-button flex flex-col gap-1 items-center justify-center"
             >
-              <i class="fa-brands fa-js text-4xl"></i>
-              <div class="font-regular font-[500]">Javascript</div>
+              <i class="fa-brands fa-js text-2xl lg:text-4xl"></i>
+              <div class="font-regular font-[500] text-xs lg:text-md">
+                Javascript
+              </div>
             </div>
 
             <div
-              class="w-28 h-28 metallic-button flex flex-col gap-1 items-center justify-center"
+              class="w-18 lg:w-28 h-18 lg:h-28 metallic-button flex flex-col gap-1 items-center justify-center"
             >
-              <i class="fa-brands fa-react text-4xl"></i>
-              <div class="font-regular font-[500]">React JS</div>
+              <i class="fa-brands fa-react text-2xl lg:text-4xl"></i>
+              <div class="font-regular font-[500] text-xs lg:text-md">
+                React JS
+              </div>
             </div>
 
             <div
-              class="w-28 h-28 metallic-button flex flex-col gap-1 items-center justify-center"
+              class="w-18 lg:w-28 h-18 lg:h-28 metallic-button flex flex-col gap-1 items-center justify-center"
             >
-              <i class="fa-brands fa-node-js text-4xl"></i>
-              <div class="font-regular font-[500]">Node JS</div>
+              <i class="fa-brands fa-node-js text-2xl lg:text-4xl"></i>
+              <div class="font-regular font-[500] text-xs lg:text-md">
+                Node JS
+              </div>
             </div>
 
             <div
-              class="w-28 h-28 metallic-button flex flex-col gap-1 items-center justify-center"
+              class="w-18 lg:w-28 h-18 lg:h-28 metallic-button flex flex-col gap-1 items-center justify-center"
             >
-              <i class="fa-brands fa-vuejs text-4xl"></i>
-              <div class="font-regular font-[500]">Vue JS</div>
+              <i class="fa-brands fa-vuejs text-2xl lg:text-4xl"></i>
+              <div class="font-regular font-[500] text-xs lg:text-md">
+                Vue JS
+              </div>
             </div>
 
             <div
-              class="w-28 h-28 metallic-button flex flex-col gap-1 items-center justify-center"
+              class="w-18 lg:w-28 h-18 lg:h-28 metallic-button flex flex-col gap-1 items-center justify-center"
             >
-              <i class="fa-solid fa-leaf text-4xl"></i>
-              <div class="font-regular font-[500]">Mongo DB</div>
+              <i class="fa-solid fa-leaf text-2xl lg:text-4xl"></i>
+              <div class="font-regular font-[500] text-xs lg:text-md">
+                Mongo DB
+              </div>
             </div>
 
             <div
-              class="w-28 h-28 metallic-button flex flex-col gap-1 items-center justify-center"
+              class="w-18 lg:w-28 h-18 lg:h-28 metallic-button flex flex-col gap-1 items-center justify-center"
             >
-              <i class="fa-brands fa-tailwind-css text-4xl"></i>
-              <div class="font-regular font-[500]">Tailwind CSS</div>
+              <i class="fa-brands fa-tailwind-css text-2xl lg:text-4xl"></i>
+              <div class="font-regular font-[500] text-xs lg:text-md">
+                Tailwind CSS
+              </div>
             </div>
 
             <div
-              class="w-28 h-28 metallic-button flex flex-col gap-1 items-center justify-center"
+              class="w-18 lg:w-28 h-18 lg:h-28 metallic-button flex flex-col gap-1 items-center justify-center"
             >
-              <i class="fa-brands fa-typescript text-4xl"></i>
-              <div class="font-regular font-[500]">TypeScript</div>
+              <i class="fa-brands fa-typescript text-2xl lg:text-4xl"></i>
+              <div class="font-regular font-[500] text-xs lg:text-md">
+                TypeScript
+              </div>
             </div>
 
             <div
-              class="w-28 h-28 metallic-button flex flex-col gap-1 items-center justify-center"
+              class="w-18 lg:w-28 h-18 lg:h-28 metallic-button flex flex-col gap-1 items-center justify-center"
             >
-              <i class="fa-brands fa-aws text-4xl"></i>
-              <div class="font-regular font-[500]">AWS</div>
+              <i class="fa-brands fa-aws text-2xl lg:text-4xl"></i>
+              <div class="font-regular font-[500] text-xs lg:text-md">AWS</div>
             </div>
 
             <div
-              class="w-28 h-28 metallic-button flex flex-col gap-1 items-center justify-center"
+              class="w-18 lg:w-28 h-18 lg:h-28 metallic-button flex flex-col gap-1 items-center justify-center"
             >
-              <i class="fa-brands fa-docker text-4xl"></i>
-              <div class="font-regular font-[500]">Docker</div>
+              <i class="fa-brands fa-docker text-2xl lg:text-4xl"></i>
+              <div class="font-regular font-[500] text-xs lg:text-md">
+                Docker
+              </div>
             </div>
 
             <div
-              class="w-28 h-28 metallic-button flex flex-col gap-1 items-center justify-center"
+              class="w-18 lg:w-28 h-18 lg:h-28 metallic-button flex flex-col gap-1 items-center justify-center"
             >
-              <i class="fa-brands fa-github text-4xl"></i>
-              <div class="font-regular font-[500]">Github</div>
+              <i class="fa-brands fa-github text-2xl lg:text-4xl"></i>
+              <div class="font-regular font-[500] text-xs lg:text-md">
+                Github
+              </div>
             </div>
 
             <div
-              class="w-28 h-28 metallic-button flex flex-col gap-1 items-center justify-center"
+              class="w-18 lg:w-28 h-18 lg:h-28 metallic-button flex flex-col gap-1 items-center justify-center"
             >
-              <i class="fa-brands fa-git-alt text-4xl"></i>
-              <div class="font-regular font-[500]">Git</div>
+              <i class="fa-brands fa-git-alt text-2xl lg:text-4xl"></i>
+              <div class="font-regular font-[500] text-xs lg:text-md">Git</div>
             </div>
 
             <div
-              class="w-28 h-28 metallic-button flex flex-col gap-1 items-center justify-center"
+              class="w-18 lg:w-28 h-18 lg:h-28 metallic-button flex flex-col gap-1 items-center justify-center"
             >
-              <i class="fa-brands fa-figma text-4xl"></i>
-              <div class="font-regular font-[500]">Figma</div>
+              <i class="fa-brands fa-figma text-2xl lg:text-4xl"></i>
+              <div class="font-regular font-[500] text-xs lg:text-md">
+                Figma
+              </div>
             </div>
 
             <div
-              class="w-28 h-28 metallic-button flex flex-col gap-1 items-center justify-center"
+              class="w-18 lg:w-28 h-18 lg:h-28 metallic-button flex flex-col gap-1 items-center justify-center"
             >
-              <i class="fa-brands fa-unity text-4xl"></i>
-              <div class="font-regular font-[500]">Unity</div>
+              <i class="fa-brands fa-unity text-2xl lg:text-4xl"></i>
+              <div class="font-regular font-[500] text-xs lg:text-md">
+                Unity
+              </div>
             </div>
           </div>
         </div>
@@ -221,11 +254,13 @@
           <!-- heading -->
           <div class="font-medium flex flex-row-reverse items-center w-full">
             <div
-              class="text-theme border-theme border-4 font-bold rounded-full flex justify-center items-center py-1 w-[150px]"
+              class="text-xs lg:text-lg text-theme border-theme border-4 font-bold rounded-full flex justify-center items-center py-1 w-[100px] lg: w-[150px]"
             >
               Experience
             </div>
-            <div class="h-1 bg-theme w-[calc(100%-150px)]"></div>
+            <div
+              class="h-1 bg-theme w-[calc(100%-100px)] lg:w-[calc(100%-150px)]"
+            ></div>
             <i class="fa-solid fa-circle-dot text-theme"></i>
           </div>
           <!-- experience list -->
@@ -243,14 +278,18 @@
                   class="flex justify-between items-center w-full text-theme"
                 >
                   <!-- company details -->
-                  <div class="">
+                  <div class="flex flex-col lg:flex-row max-w-1/2 lg:max-w-2/3">
                     <span class="font-semibold">Software Engineer </span>
-                    <span class="underline">
+                    <span
+                      class="underline text-ellipsis overflow-hidden text-nowrap w-full"
+                    >
                       Vargah Software Private Limited</span
                     >
-                    <span>
-                      <i class="fa-solid fa-location-dot"></i> Hyderabad,
-                      Telangana
+                    <span
+                      class="flex gap-2 items-center text-ellipsis overflow-hidden text-nowrap w-full"
+                    >
+                      <i class="fa-solid fa-location-dot"></i>
+                      <span>Hyderabad, Telangana</span>
                     </span>
                   </div>
                   <!-- duration -->
@@ -310,12 +349,18 @@
                   class="flex justify-between items-center w-full text-theme"
                 >
                   <!-- company details -->
-                  <div class=" ">
+                  <div class="flex flex-col lg:flex-row max-w-1/2 lg:max-w-2/3">
                     <span class="font-semibold">Frontend Developer</span>
-                    <span class="underline"> Investme.AI</span>
-                    <span>
-                      <i class="fa-solid fa-location-dot"></i> Bangalore,
-                      Karnataka
+                    <span
+                      class="underline text-ellipsis overflow-hidden text-nowrap w-full"
+                    >
+                      Investme.AI</span
+                    >
+                    <span
+                      class="flex gap-2 items-center text-ellipsis overflow-hidden text-nowrap w-full"
+                    >
+                      <i class="fa-solid fa-location-dot"></i>
+                      <span>Bangalore, Karnataka</span>
                     </span>
                   </div>
                   <!-- duration -->
@@ -356,14 +401,18 @@
                   class="flex justify-between items-center w-full text-theme"
                 >
                   <!-- company details -->
-                  <div class=" ">
+                  <div class="flex flex-col lg:flex-row max-w-1/2 lg:max-w-2/3">
                     <span class="font-semibold">Software Intern</span>
-                    <span class="underline">
+                    <span
+                      class="underline text-ellipsis overflow-hidden text-nowrap w-full"
+                    >
                       Vargah Software Private Limited</span
                     >
-                    <span>
-                      <i class="fa-solid fa-location-dot"></i> Hyderabad,
-                      Telangana
+                    <span
+                      class="flex gap-2 items-center text-ellipsis overflow-hidden text-nowrap w-full"
+                    >
+                      <i class="fa-solid fa-location-dot"></i>
+                      <span>Hyderabad, Telangana</span>
                     </span>
                   </div>
                   <!-- duration -->
@@ -403,19 +452,23 @@
           <!-- heading -->
           <div class="font-medium flex flex-row items-center w-full">
             <div
-              class="text-theme border-theme border-4 font-bold rounded-full flex justify-center items-center py-1 w-[150px]"
+              class="text-xs lg:text-lg text-theme border-theme border-4 font-bold rounded-full flex justify-center items-center py-1 w-[100px] lg: w-[150px]"
             >
               Education
             </div>
-            <div class="h-1 bg-theme w-[calc(100%-150px)]"></div>
+            <div
+              class="h-1 bg-theme w-[calc(100%-100px)] lg:w-[calc(100%-150px)]"
+            ></div>
             <i class="fa-solid fa-circle-dot text-theme"></i>
           </div>
           <!-- education list -->
-          <div class="w-full flex justify-between items-strech">
+          <div
+            class="w-full flex flex-col gap-2 lg:flex-row justify-between items-strech"
+          >
             <div
-              class="w-2/7 border shadow p-2 rounded flex flex-col justify-between"
+              class="w-full lg:w-2/7 border shadow p-2 rounded flex flex-col justify-between gap-1"
             >
-              <img src="./assets/rvrjc.jpeg" class="w-full h-32" />
+              <img src="./assets/rvrjc.jpeg" class="w-full h-28 lg:h-32" />
               <div class="text-lg font-semibold">
                 Computer Science & Engineering
               </div>
@@ -432,15 +485,18 @@
                 <span>Honor's in Computer Science</span>
               </div>
               <div
-                class="text-sm font-medium text-theme text-right border-theme border px-2 py-1 rounded w-fit self-end hover:cursor-pointer"
+                class="text-xs lg:text-sm font-medium text-theme text-right border-theme border px-2 py-1 rounded w-fit self-end hover:cursor-pointer"
               >
                 CGPA : 8.67/10.0
               </div>
             </div>
             <div
-              class="w-2/7 border shadow p-2 rounded flex flex-col justify-between"
+              class="w-full lg:w-2/7 border shadow p-2 rounded flex flex-col justify-between gap-1"
             >
-              <img src="./assets/srichaitanya.jpeg" class="w-full h-32" />
+              <img
+                src="./assets/srichaitanya.jpeg"
+                class="w-full h-28 lg:h-32"
+              />
               <div class="text-lg font-semibold">
                 Mathematics, Physics and Chemistry
               </div>
@@ -457,15 +513,15 @@
                 <span>6711</span>
               </div>
               <div
-                class="text-sm font-medium text-theme text-right border-theme border px-2 py-1 rounded w-fit self-end hover:cursor-pointer"
+                class="text-xs lg:text-sm font-medium text-theme text-right border-theme border px-2 py-1 rounded w-fit self-end hover:cursor-pointer"
               >
                 CGPA : 9.7/10.0
               </div>
             </div>
             <div
-              class="w-2/7 border shadow p-2 rounded flex flex-col justify-between"
+              class="w-full lg:w-2/7 border shadow p-2 rounded flex flex-col justify-between gap-1"
             >
-              <img src="./assets/school.jpg" class="w-full h-32" />
+              <img src="./assets/school.jpg" class="w-full h-28 lg:h-32" />
               <div class="text-lg font-semibold">Secondary Education in</div>
               <div class="text-theme font-medium underline">
                 St. Patrick's High School
@@ -475,7 +531,7 @@
                 India.
               </div>
               <div
-                class="text-sm font-medium text-theme text-right border-theme border px-2 py-1 rounded w-fit self-end hover:cursor-pointer"
+                class="text-xs lg:text-sm font-medium text-theme text-right border-theme border px-2 py-1 rounded w-fit self-end hover:cursor-pointer"
               >
                 CGPA : 10.0/10.0
               </div>
@@ -487,11 +543,13 @@
           <!-- heading -->
           <div class="font-medium flex flex-row-reverse items-center w-full">
             <div
-              class="text-theme border-theme border-4 font-bold rounded-full flex justify-center items-center py-1 w-[150px]"
+              class="text-xs lg:text-lg text-theme border-theme border-4 font-bold rounded-full flex justify-center items-center py-1 w-[100px] lg: w-[150px]"
             >
               Projects
             </div>
-            <div class="h-1 bg-theme w-[calc(100%-150px)]"></div>
+            <div
+              class="h-1 bg-theme w-[calc(100%-100px)] lg:w-[calc(100%-150px)]"
+            ></div>
             <i class="fa-solid fa-circle-dot text-theme"></i>
           </div>
           <!-- projects list -->
@@ -499,7 +557,7 @@
             <div
               class="border border-gray/50 shadow rounded px-2 py-1 flex flex-col gap-2"
             >
-              <div class="font-medium text-theme text-xl">
+              <div class="font-medium text-theme text-sm lg:text-xl">
                 Healthkard | <span>Fullstack Developer</span>
               </div>
               <!-- keypoints -->
@@ -536,9 +594,31 @@
                   transactions and real-time payment status.
                 </li>
               </ul>
-              <div>
-                <div class="text-xl font-medium text-theme">Project Assets</div>
-                <div class="flex items-center gap-2">
+              <div class="flex flex-col gap-2">
+                <div class="text-md lg:text-xl font-medium text-theme">
+                  Project Assets
+                </div>
+                <div
+                  class="lg:hidden flex flex-col lg:flex-row lg:items-center gap-2"
+                >
+                  <iframe
+                    style="border: 1px solid rgba(0, 0, 0, 0.1)"
+                    width="200"
+                    height="112"
+                    src="https://embed.figma.com/design/l1t5jJN5ZvXDJ7lITV8h7J/Healthkard-home-page?node-id=274-212&embed-host=share"
+                    allowfullscreen
+                  ></iframe>
+                  <iframe
+                    style="border: 1px solid rgba(0, 0, 0, 0.1)"
+                    width="200"
+                    height="112"
+                    src="https://embed.figma.com/design/l1t5jJN5ZvXDJ7lITV8h7J/Healthkard-home-page?node-id=0-1&embed-host=share"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <div
+                  class="hidden lg:flex flex-col lg:flex-row lg:items-center gap-2"
+                >
                   <iframe
                     style="border: 1px solid rgba(0, 0, 0, 0.1)"
                     width="400"
@@ -559,7 +639,7 @@
             <div
               class="border border-gray/50 shadow rounded px-2 py-1 flex flex-col gap-2"
             >
-              <div class="font-medium text-theme text-xl">
+              <div class="font-medium text-theme text-sm lg:text-xl">
                 RJENest | <span>College ITBI Web Application</span>
               </div>
               <!-- keypoints -->
@@ -573,24 +653,30 @@
                   college management and government initiatives.
                 </li>
               </ul>
-              <div>
-                <div class="text-xl font-medium text-theme">Project Assets</div>
+              <div class="flex flex-col gap-2">
+                <div class="text-md lg:text-xl font-medium text-theme">
+                  Project Assets
+                </div>
                 <div class="flex flex-col gap-2">
                   <div class="flex items-center gap-2">
-                    <div class="text-theme font-medium">Website Link :</div>
+                    <div class="text-theme font-medium text-xs lg:text-sm">
+                      Website Link :
+                    </div>
                     <a
                       href="https://rvrjcce.ac.in/rjenest/"
                       target="_blank"
-                      class="underline"
+                      class="underline text-[10px] lg:text-sm"
                       >https://rvrjcce.ac.in/rjenest/</a
                     >
                   </div>
                   <div class="flex items-center gap-2">
-                    <div class="text-theme font-medium">Source Code :</div>
+                    <div class="text-theme font-medium text-xs lg:text-sm">
+                      Source Code :
+                    </div>
                     <a
                       href="https://github.com/SkShoheb33/RjeNest"
                       target="_blank"
-                      class="underline"
+                      class="underline text-[10px] lg:text-sm"
                       >https://github.com/SkShoheb33/RjeNest</a
                     >
                   </div>
@@ -620,7 +706,7 @@
           </svg>
           <blockquote>
             <p
-              class="text-2xl italic font-semibold tracking-tight text-heading"
+              class="text-xl lg:text-2xl italic font-semibold tracking-tight text-heading"
             >
               "I believe in hard work. I compete with myself from yesterday for
               a better tomorrow."
@@ -631,25 +717,37 @@
     </div>
     <footer
       id="contact"
-      class="bg-theme text-white px-16 py-4 flex justify-between"
+      class="bg-theme text-white px-4 lg:px-16 py-4 flex flex-col lg:flex-row justify-between w-full gap-4"
     >
-      <div class="w-1/3 text-center font-medium">
+      <div class="w-full lg:w-1/3 text-center font-medium">
         If you have an idea you’d like to implement, please don’t hesitate to
         contact me.
       </div>
-      <div class="w-1/3 text-center font-medium flex justify-between">
-        <div class="flex flex-col justify-center items-center">
+      <div class="w-full lg:w-1/3 text-center font-medium flex justify-between">
+        <a
+          href="https://www.linkedin.com/in/shaikshoheb33/"
+          target="_blank"
+          class="flex flex-col justify-center items-center"
+        >
           <i class="fa-brands fa-linkedin text-3xl"></i>
           <div class="text-xs">LinkedIn</div>
-        </div>
-        <div class="flex flex-col justify-center items-center">
+        </a>
+        <a
+          href="https://x.com/sk_shoheb_33"
+          target="_blank"
+          class="flex flex-col justify-center items-center"
+        >
           <i class="fa-brands fa-x-twitter text-3xl"></i>
           <div class="text-xs">X(formerly Twitter)</div>
-        </div>
-        <div class="flex flex-col justify-center items-center">
+        </a>
+        <a
+          href="https://github.com/SkShoheb33"
+          target="_blank"
+          class="flex flex-col justify-center items-center"
+        >
           <i class="fa-brands fa-github text-3xl"></i>
           <div class="text-xs">Github</div>
-        </div>
+        </a>
       </div>
     </footer>
   </body>
